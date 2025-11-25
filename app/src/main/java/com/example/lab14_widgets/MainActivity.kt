@@ -1,16 +1,14 @@
 package com.example.lab14_widgets
 
-import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
 
-class MainActivity : ComponentActivity() {
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+
+class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            SimpleWidgetContent()
-        }
+        // Usa el layout activity_main.xml
+        setContentView(R.layout.activity_main)
     }
 }
