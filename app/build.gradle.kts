@@ -54,6 +54,8 @@ dependencies {
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.material3)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -63,7 +65,7 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 
     // For AppWidgets support
-    implementation ("androidx.glance:glance-appwidget:1.1.0")
+    implementation ("androidx.glance:glance-appwidget:1.1.1")
 
     // For interop APIs with Material 3
     implementation ("androidx.glance:glance-material3:1.1.0")
